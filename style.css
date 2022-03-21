@@ -1,0 +1,58 @@
+.main {
+    display:grid;
+    grid-template-rows: 1fr 5fr;
+    row-gap: 5px;
+    justify-content: start;
+    border: solid;
+
+}
+
+.screen {
+    background-color: #c6ecc6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.calc {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    
+}
+
+.digit {
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d1d1e0;
+}
+
+.numbers {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7px;
+}
+
+.operators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 7px;
+
+}
+
+.oper {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: cadetblue;
+}
+
+.zero {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.clear {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
