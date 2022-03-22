@@ -45,9 +45,26 @@ let one = document.querySelector("button.one");
 console.log(one);
 
 one.addEventListener("click", (event) => {
-    let display = Number(screen.textContent);
+    //if screen.textContent is 0, remove 0 and place 1
+    //else leave it as is
+    if (screen.textContent == 0) {
+        console.log("Yahoo");
+        screen.textContent = null;
+        screen.textContent = 1;  
+
+    }
+    else {
+        screen.textContent += one.textContent;
+        console.log(screen.textContent.length);
+    }
+    
+
+    
+    //console.log(screen.textContent == 0);
+    
+/*     let display = Number(screen.textContent);
     Number(screen.textContent = 1);
-    console.log(typeof(screen.textContent));
+    console.log(typeof(screen.textContent)); */
 })
 
 //console.log(zero);
