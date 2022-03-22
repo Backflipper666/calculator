@@ -32,4 +32,23 @@ function operate(operator, a, b) {
         return divide(a, b);
     }
 }
-console.log(operate("*", 10, 5));
+
+//add eventListener so that when a number is pressed, it'll be shown on the screen
+//do the previous step to operators too
+
+let screen = document.querySelector("span");
+screen.textContent = 0;
+
+
+
+let one = document.querySelector("button.one");
+console.log(one);
+
+one.addEventListener("click", (event) => {
+    let display = Number(screen.textContent);
+    Number(screen.textContent = 1);
+    console.log(typeof(screen.textContent));
+})
+
+//console.log(zero);
+
