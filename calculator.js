@@ -48,7 +48,7 @@ let firstOperator = 0;
 let secondOperator = 0;
 let screen = document.querySelector("span");
 screen.textContent = 0;
-let screenText = screen.textContent;
+let display = screen.textContent;
 
 
 
@@ -59,9 +59,11 @@ one.addEventListener("click", (event) => {
     if (screen.textContent == 0) {
         screen.textContent = null;
         screen.textContent = 1;  
+        firstOperator = screen.textContent;
     }
     else {
         screen.textContent += one.textContent;
+        firstOperator = screen.textContent;
     }
 })
 
@@ -71,9 +73,14 @@ two.addEventListener("click", (event) => {
     if (screen.textContent == 0) {
         screen.textContent = null;
         screen.textContent = 2;  
+        firstOperator = screen.textContent;
+        
     }
     else {
         screen.textContent += two.textContent;
+        firstOperator = screen.textContent;
+        console.log("first op is: " + firstOperator)
+        
     }
 })
 
@@ -84,9 +91,11 @@ three .addEventListener("click", (event) => {
     if (screen.textContent == 0) {
         screen.textContent = null;
         screen.textContent = 3;  
+        firstOperator = screen.textContent;
     }
     else {
         screen.textContent += three .textContent;
+        firstOperator = screen.textContent;
     }
 })
 
@@ -179,4 +188,17 @@ zero.addEventListener("click", (event) => {
     else {
         screen.textContent += zero.textContent;
     }
+})
+
+let clear = document.querySelector("button.clear");
+
+clear.addEventListener("click", (event) => {
+    screen.textContent = 0;
+})
+
+let plus = document.querySelector("button.plus");
+
+plus.addEventListener("click", (event) => {
+
+    screen.textContent = "+";
 })
