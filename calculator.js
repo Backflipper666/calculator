@@ -33,39 +33,46 @@ function operate(operator, a, b) {
     }
 }
 
-//add eventListener so that when a number is pressed, it'll be shown on the screen
-//do the previous step to operators too
 
+//algorithm
+//assign the first operand
+//show the first operand on the display while typing
+//take operator from the user
+//assign second operand
+//show second operand on the display while typing
+//manipulate the operators according to the operator when = is clicked
+
+
+
+let firstOperator = 0;
+let secondOperator = 0;
 let screen = document.querySelector("span");
 screen.textContent = 0;
+let screenText = screen.textContent;
 
 
 
 let one = document.querySelector("button.one");
-console.log(one);
+
 
 one.addEventListener("click", (event) => {
-    //if screen.textContent is 0, remove 0 and place 1
-    //else leave it as is
     if (screen.textContent == 0) {
-        console.log("Yahoo");
         screen.textContent = null;
         screen.textContent = 1;  
-
     }
     else {
         screen.textContent += one.textContent;
-        console.log(screen.textContent.length);
     }
-    
-
-    
-    //console.log(screen.textContent == 0);
-    
-/*     let display = Number(screen.textContent);
-    Number(screen.textContent = 1);
-    console.log(typeof(screen.textContent)); */
 })
 
-//console.log(zero);
+let two = document.querySelector("button.two");
 
+two.addEventListener("click", (event) => {
+    if (screen.textContent == 0) {
+        screen.textContent = null;
+        screen.textContent = 2;  
+    }
+    else {
+        screen.textContent += two.textContent;
+    }
+})
