@@ -76,9 +76,11 @@ two.addEventListener("click", (event) => {
         //firstOperator = screen.textContent;
         
     }
-/*     else if (screen.textContent == "+") {
+    else if (screen.textContent == "+") {
         console.log("Plus indeed");
-    } */
+        screen.textContent = null;
+        screen.textContent = 2;  
+    }
     else {
         screen.textContent += two.textContent;
         //firstOperator = screen.textContent;
@@ -97,7 +99,7 @@ three .addEventListener("click", (event) => {
         
     }
     else {
-        screen.textContent += three .textContent;
+        screen.textContent += three.textContent;
         
     }
 })
