@@ -208,3 +208,11 @@ plus.addEventListener("click", (event) => {
     console.log(firstOperator);
     screen.textContent = "+";
 })
+
+
+let equal = document.querySelector("button.equal");
+
+equal.addEventListener("click", (equal) => {
+    secondOperator = screen.textContent;
+    console.log(Number(firstOperator) + Number(secondOperator));
+})
