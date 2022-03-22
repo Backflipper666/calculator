@@ -59,11 +59,11 @@ one.addEventListener("click", (event) => {
     if (screen.textContent == 0) {
         screen.textContent = null;
         screen.textContent = 1;  
-        firstOperator = screen.textContent;
+        
     }
     else {
         screen.textContent += one.textContent;
-        firstOperator = screen.textContent;
+       
     }
 })
 
@@ -73,13 +73,16 @@ two.addEventListener("click", (event) => {
     if (screen.textContent == 0) {
         screen.textContent = null;
         screen.textContent = 2;  
-        firstOperator = screen.textContent;
+        //firstOperator = screen.textContent;
         
     }
+/*     else if (screen.textContent == "+") {
+        console.log("Plus indeed");
+    } */
     else {
         screen.textContent += two.textContent;
-        firstOperator = screen.textContent;
-        console.log("first op is: " + firstOperator)
+        //firstOperator = screen.textContent;
+        //console.log("first op is: " + firstOperator)
         
     }
 })
@@ -91,11 +94,11 @@ three .addEventListener("click", (event) => {
     if (screen.textContent == 0) {
         screen.textContent = null;
         screen.textContent = 3;  
-        firstOperator = screen.textContent;
+        
     }
     else {
         screen.textContent += three .textContent;
-        firstOperator = screen.textContent;
+        
     }
 })
 
@@ -199,6 +202,7 @@ clear.addEventListener("click", (event) => {
 let plus = document.querySelector("button.plus");
 
 plus.addEventListener("click", (event) => {
-
+    firstOperator = screen.textContent;
+    console.log(firstOperator);
     screen.textContent = "+";
 })
