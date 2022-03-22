@@ -76,3 +76,107 @@ two.addEventListener("click", (event) => {
         screen.textContent += two.textContent;
     }
 })
+
+
+let three = document.querySelector("button.three");
+
+three .addEventListener("click", (event) => {
+    if (screen.textContent == 0) {
+        screen.textContent = null;
+        screen.textContent = 3;  
+    }
+    else {
+        screen.textContent += three .textContent;
+    }
+})
+
+
+let four = document.querySelector("button.four");
+
+four .addEventListener("click", (event) => {
+    if (screen.textContent == 0) {
+        screen.textContent = null;
+        screen.textContent = 4;  
+    }
+    else {
+        screen.textContent += four.textContent;
+    }
+})
+
+
+let five = document.querySelector("button.five");
+
+five.addEventListener("click", (event) => {
+    if (screen.textContent == 0) {
+        screen.textContent = null;
+        screen.textContent = 5;  
+    }
+    else {
+        screen.textContent += five.textContent;
+    }
+})
+
+
+let six = document.querySelector("button.six");
+
+six.addEventListener("click", (event) => {
+    if (screen.textContent == 0) {
+        screen.textContent = null;
+        screen.textContent = 6;  
+    }
+    else {
+        screen.textContent += six.textContent;
+    }
+})
+
+
+let seven = document.querySelector("button.seven");
+
+seven.addEventListener("click", (event) => {
+    if (screen.textContent == 0) {
+        screen.textContent = null;
+        screen.textContent = 7;  
+    }
+    else {
+        screen.textContent += seven.textContent;
+    }
+})
+
+
+let eight = document.querySelector("button.eight");
+
+eight.addEventListener("click", (event) => {
+    if (screen.textContent == 0) {
+        screen.textContent = null;
+        screen.textContent = 8;  
+    }
+    else {
+        screen.textContent += eight.textContent;
+    }
+})
+
+
+let nine = document.querySelector("button.nine");
+
+nine.addEventListener("click", (event) => {
+    if (screen.textContent == 0) {
+        screen.textContent = null;
+        screen.textContent = 9;  
+    }
+    else {
+        screen.textContent += nine.textContent;
+    }
+})
+
+
+let zero = document.querySelector("button.zero");
+
+zero.addEventListener("click", (event) => {
+    if (screen.textContent == 0) {
+        screen.textContent = null;
+        screen.textContent = 0;  
+    }
+    else {
+        screen.textContent += zero.textContent;
+    }
+})
