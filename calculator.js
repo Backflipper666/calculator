@@ -73,6 +73,12 @@ one.addEventListener("click", (event) => {
         screen.textContent = 1;
 
     }
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
+        screen.textContent = null;
+        screen.textContent = 1;
+
+    }
     else {
         screen.textContent += one.textContent;
        
@@ -95,6 +101,13 @@ two.addEventListener("click", (event) => {
     }
     else if (screen.textContent == "-") {
         console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 2;
+
+    }
+    //×
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
         screen.textContent = null;
         screen.textContent = 2;
 
@@ -127,6 +140,12 @@ three .addEventListener("click", (event) => {
         screen.textContent = 3;
 
     }
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
+        screen.textContent = null;
+        screen.textContent = 3;
+
+    }
     else {
         screen.textContent += three.textContent;
         
@@ -148,6 +167,12 @@ four .addEventListener("click", (event) => {
     }
     else if (screen.textContent == "-") {
         console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 4;
+
+    }
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
         screen.textContent = null;
         screen.textContent = 4;
 
@@ -176,6 +201,12 @@ five.addEventListener("click", (event) => {
         screen.textContent = 5;
 
     }
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
+        screen.textContent = null;
+        screen.textContent = 5;
+
+    }
     else {
         screen.textContent += five.textContent;
     }
@@ -196,6 +227,12 @@ six.addEventListener("click", (event) => {
     }
     else if (screen.textContent == "-") {
         console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 6;
+
+    }
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
         screen.textContent = null;
         screen.textContent = 6;
 
@@ -224,6 +261,12 @@ seven.addEventListener("click", (event) => {
         screen.textContent = 7;
 
     }
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
+        screen.textContent = null;
+        screen.textContent = 7;
+
+    }
     else {
         screen.textContent += seven.textContent;
     }
@@ -244,6 +287,12 @@ eight.addEventListener("click", (event) => {
     }
     else if (screen.textContent == "-") {
         console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 8;
+
+    }
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
         screen.textContent = null;
         screen.textContent = 8;
 
@@ -272,6 +321,12 @@ nine.addEventListener("click", (event) => {
         screen.textContent = 9;
 
     }
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
+        screen.textContent = null;
+        screen.textContent = 9;
+
+    }
     else {
         screen.textContent += nine.textContent;
     }
@@ -292,6 +347,12 @@ zero.addEventListener("click", (event) => {
     }
     else if (screen.textContent == "-") {
         console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 0;
+
+    }
+    else if (screen.textContent == "×") {
+        console.log("× indeed");
         screen.textContent = null;
         screen.textContent = 0;
 
