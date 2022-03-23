@@ -67,6 +67,12 @@ one.addEventListener("click", (event) => {
         screen.textContent = null;
         screen.textContent = 1;  
     }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 1;
+
+    }
     else {
         screen.textContent += one.textContent;
        
@@ -115,6 +121,12 @@ three .addEventListener("click", (event) => {
         screen.textContent = null;
         screen.textContent = 3;  
     }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 3;
+
+    }
     else {
         screen.textContent += three.textContent;
         
@@ -134,6 +146,12 @@ four .addEventListener("click", (event) => {
         screen.textContent = null;
         screen.textContent = 4;  
     }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 4;
+
+    }
     else {
         screen.textContent += four.textContent;
     }
@@ -151,6 +169,12 @@ five.addEventListener("click", (event) => {
         console.log("Plus indeed");
         screen.textContent = null;
         screen.textContent = 5;  
+    }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 5;
+
     }
     else {
         screen.textContent += five.textContent;
@@ -170,6 +194,12 @@ six.addEventListener("click", (event) => {
         screen.textContent = null;
         screen.textContent = 6;  
     }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 6;
+
+    }
     else {
         screen.textContent += six.textContent;
     }
@@ -187,6 +217,12 @@ seven.addEventListener("click", (event) => {
         console.log("Plus indeed");
         screen.textContent = null;
         screen.textContent = 7;  
+    }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 7;
+
     }
     else {
         screen.textContent += seven.textContent;
@@ -206,6 +242,12 @@ eight.addEventListener("click", (event) => {
         screen.textContent = null;
         screen.textContent = 8;  
     }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 8;
+
+    }
     else {
         screen.textContent += eight.textContent;
     }
@@ -224,6 +266,12 @@ nine.addEventListener("click", (event) => {
         screen.textContent = null;
         screen.textContent = 9;  
     }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 9;
+
+    }
     else {
         screen.textContent += nine.textContent;
     }
@@ -241,6 +289,12 @@ zero.addEventListener("click", (event) => {
         console.log("Plus indeed");
         screen.textContent = null;
         screen.textContent = 0;  
+    }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 0;
+
     }
     else {
         screen.textContent += zero.textContent;
@@ -271,18 +325,18 @@ minus.addEventListener("click", (event) => {
     operand = "-";
 })
 
-let multiply = document.querySelector("button.multiply");
+let multiplyBtn = document.querySelector("button.multiply");
 
-multiply.addEventListener("click", (event) => {
+multiplyBtn.addEventListener("click", (event) => {
     firstOperator = screen.textContent;
     console.log(firstOperator);
     screen.textContent = "×";
     operand = "×";
 })
 
-let divide = document.querySelector("button.divide");
+let divideBtn = document.querySelector("button.divide");
 
-divide.addEventListener("click", (event) => {
+divideBtn.addEventListener("click", (event) => {
     firstOperator = screen.textContent;
     console.log(firstOperator);
     screen.textContent = "/";
