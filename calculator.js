@@ -49,6 +49,7 @@ let secondOperator = 0;
 let screen = document.querySelector("span");
 screen.textContent = 0;
 let display = screen.textContent;
+let operand = null;
 
 
 
@@ -85,6 +86,12 @@ two.addEventListener("click", (event) => {
         console.log("Plus indeed");
         screen.textContent = null;
         screen.textContent = 2;  
+    }
+    else if (screen.textContent == "-") {
+        console.log("minus indeed");
+        screen.textContent = null;
+        screen.textContent = 2;
+
     }
     else {
         screen.textContent += two.textContent;
@@ -252,6 +259,25 @@ plus.addEventListener("click", (event) => {
     firstOperator = screen.textContent;
     console.log(firstOperator);
     screen.textContent = "+";
+    operand = "+";
+})
+
+let minus = document.querySelector("button.minus");
+
+minus.addEventListener("click", (event) => {
+    firstOperator = screen.textContent;
+    console.log(firstOperator);
+    screen.textContent = "-";
+    operand = "-";
+})
+
+let multiply = document.querySelector("button.multiply");
+
+multiply.addEventListener("click", (event) => {
+    firstOperator = screen.textContent;
+    console.log(firstOperator);
+    screen.textContent = "×";
+    operand = "×";
 })
 
 
@@ -259,5 +285,9 @@ let equal = document.querySelector("button.equal");
 
 equal.addEventListener("click", (equal) => {
     secondOperator = screen.textContent;
-    console.log(Number(firstOperator) + Number(secondOperator));
+    if (operand == "+") screen.textContent = (Number(firstOperator) + Number(secondOperator));
+    else if (operand == "-") screen.textContent = (Number(firstOperator) - Number(secondOperator));
+    else if (operand == "/") screen.textContent = (Number(firstOperator) / Number(secondOperator));
+    else if (operand == "×") screen.textContent = (Number(firstOperator) * Number(secondOperator));
+    console.log(operand);
 })
