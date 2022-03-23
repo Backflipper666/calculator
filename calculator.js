@@ -412,5 +412,5 @@ equal.addEventListener("click", (equal) => {
     if (operand == "+") screen.textContent = add(Number(firstOperator), Number(secondOperator))
     else if (operand == "-") screen.textContent = subtract(Number(firstOperator), Number(secondOperator))
     else if (operand == "/") screen.textContent = divide(Number(firstOperator), Number(secondOperator))
-    else if (operand == "×") screen.textContent = multiplyBtn(Number(firstOperator), Number(secondOperator))
+    else if (operand == "×") screen.textContent = multiply(Number(firstOperator), Number(secondOperator))
 })
