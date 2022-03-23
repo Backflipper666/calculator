@@ -280,6 +280,14 @@ multiply.addEventListener("click", (event) => {
     operand = "×";
 })
 
+let divide = document.querySelector("button.divide");
+
+divide.addEventListener("click", (event) => {
+    firstOperator = screen.textContent;
+    console.log(firstOperator);
+    screen.textContent = "/";
+    operand = "/";
+})
 
 let equal = document.querySelector("button.equal");
 
